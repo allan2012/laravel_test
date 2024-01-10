@@ -12,7 +12,7 @@ class Task extends Model
 
     protected $fillable = ['name', 'project_id', 'priority'];
 
-    public const MAX_PRIORITY_VAL = 2147483647;
+    const MAX_PRIORITY_VAL = 2147483647;
 
     public function project(): BelongsTo
     {

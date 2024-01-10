@@ -15,10 +15,6 @@ use App\Http\Controllers\ProjectsController;
 |
 */
 
-Route::get('/test', function () {
-    return view('test');
-});
-
 Route::get('/', [TasksController::class, 'index'])->name('home');
 Route::get('task/{task}', [TasksController::class, 'show']);
 Route::get('tasks/create', [TasksController::class, 'create'])->name('tasks.create');
